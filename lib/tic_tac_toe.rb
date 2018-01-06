@@ -88,6 +88,7 @@ class TicTacToe
       if won
         return combination
       end
+      return false
     end
   end
 
