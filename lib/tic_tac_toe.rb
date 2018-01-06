@@ -88,8 +88,8 @@ class TicTacToe
       if won
         return combination
       end
-      return false
     end
+    return false
   end
 
   def full?
