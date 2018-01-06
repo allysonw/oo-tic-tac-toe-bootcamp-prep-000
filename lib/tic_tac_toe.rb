@@ -22,4 +22,16 @@ class TicTacToe
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
+  def input_to_index(input)
+    input.to_i - 1
+  end
+
+  def move(index, character)
+    @board[index.to_i] = character
+  end
+
+  def position_taken?(index)
+    !(@board[index].nil? || @board[index] == " ")
+  end
+
 end
