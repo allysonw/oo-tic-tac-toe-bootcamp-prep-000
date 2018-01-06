@@ -91,6 +91,7 @@ class TicTacToe
         return combination
       end
     end
+  end
 
   def full?
     return @board.all? do |space|
@@ -113,6 +114,5 @@ class TicTacToe
       return @board[winning_combo[0]]
     else
       return nil
+    end
   end
-
-end
